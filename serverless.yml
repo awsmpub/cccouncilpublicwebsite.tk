@@ -9,24 +9,8 @@ frameworkVersion: '2'
 
 provider:
   name: aws
-  # runtime: python3.7
   stage: dev
   region: ap-southeast-2
-
-  # lambdaHashingVersion: 20201221
-  # apiGateway:
-  #   shouldStartNameWithService: true
-
-  # iamRoleStatements:
-  #   - Effect: "Allow"
-  #     Action:
-  #       - dynamodb:Scan
-  #       - dynamodb:UpdateItem
-  #       - dynamodb:PutItem
-  #     Resource: "arn:aws:dynamodb:*:*:table/${self:provider.environment.DYNAMODB_TABLE}"
-
-  # environment:
-  #   DYNAMODB_TABLE: trafficStats
 
 package:
   exclude:
@@ -40,31 +24,6 @@ package:
     - .serverless/**
     - package-lock.json
     - .DS_Store
-
-# functions:
-#   getTrafficStat:
-#     handler: backend/get_traffic_stat.handler
-#     events:
-#       - http:
-#           path: stats
-#           method: get
-#           cors: true
-
-# resources:
-#   Resources:
-#     trafficStats:
-#       Type: 'AWS::DynamoDB::Table'
-#       Properties:
-#         TableName: ${self:provider.environment.DYNAMODB_TABLE}
-#         AttributeDefinitions:
-#           - AttributeName: statName
-#             AttributeType: S
-#         KeySchema:
-#           - AttributeName: statName
-#             KeyType: HASH
-#         ProvisionedThroughput:
-#           ReadCapacityUnits: 1
-#           WriteCapacityUnits: 1
 
 custom:
   client:
