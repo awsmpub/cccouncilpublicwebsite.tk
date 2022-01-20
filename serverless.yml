@@ -24,6 +24,7 @@ package:
     - .serverless/**
     - package-lock.json
     - .DS_Store
+    - test/**
 
 custom:
   client:

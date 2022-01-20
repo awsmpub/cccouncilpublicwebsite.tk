@@ -19,4 +19,4 @@ The public website includes the following sections:
 - Terms of Use  
 - Privacy Policy  
 
-Copyright ©2021 All rights reserved 
+Copyright ©2021 All rights reserved
