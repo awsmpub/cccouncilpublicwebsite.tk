@@ -27,7 +27,7 @@ package:
 
 custom:
   client:
-    bucketName: cccouncilpublicwebsite.tk
+    bucketName: cccouncilpublicwebsite.tk1
     distributionFolder: frontend
     indexDocument: index.html
     errorDocument: error.html
