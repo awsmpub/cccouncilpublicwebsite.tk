@@ -5,7 +5,7 @@ service: publicwebsite
 app: cccouncil
 org: srvlessfwrk
 
-frameworkVersion: '2'
+#frameworkVersion: '2'
 
 provider:
   name: aws
